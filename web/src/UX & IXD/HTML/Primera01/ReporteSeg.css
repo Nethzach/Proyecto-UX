@@ -1,0 +1,8 @@
+a:link, a:visited{
+    background-color: blueviolet;
+    color: white;
+    padding: 0.7px 25px;
+    text-align: center;
+    text-decoration: none;
+}
+

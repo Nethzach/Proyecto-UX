@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@200;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <main>
+        <div class="box">
+            <div class="inner-box">
+                <div class="forms-wrap">
+                    <form action="index.html" autocomplete="off" class="sign-in-form">
+                        <div class="logo">
+                            <img src="./img/cabello.jpg" alt="cabelloSAC">
+                            <h4>Cabello SAC</h4>
+                        </div>
+
+                        <div class="heading">
+                            <h2>Bienvenido</h2>
+                        </div>
+
+                        <div class="actual-form">
+                            <div class="input-wrap">
+                                <input type="text" minlength="4" class="input-field" autocomplete="off" id="usuario"
+                                    required>
+                                <label for="usuario">Usuario</label>
+                            </div>
+
+                            <div class="input-wrap">
+                                <input type="password" minlength="4" class="input-field" autocomplete="off"
+                                    id="contraseña" required>
+                                <label for="contraseña">Contraseña</label>
+                            </div>
+
+                            <button class="sign-btn"
+                                onclick="window.location.href='Agendar nueva cita.html'">Ingresar</button>
+                            <div class="heading">
+                                <h6>¿Olvidaste tu usuario y/o contraseña?</h6>
+                                <a href="#" class="toggle">Conseguir ayuda</a>
+                            </div>
+                        </div>
+                    </form>
+
+                    <form action="index.html" autocomplete="off" class="sign-up-form">
+                        <div class="logo">
+                            <img src="img/cabello.jpg" alt="cabelloSAC">
+                            <h3>Cabello SAC</h3>
+                        </div>
+
+                        <div class="heading">
+                            <h2>Recupera tu cuenta</h2>
+                            <h6>Ingresa tu email para buscar tu cuenta</h6>
+                        </div>
+
+                        <div class="actual-form">
+                            <div class="input-wrap">
+                                <input type="email" minlength="4" class="input-field" autocomplete="off" id="usuario"
+                                    required>
+                                <label for="usuario">Email</label>
+                            </div>
+                            <input type="submit" value="Recuperar Cuenta" class="sign-btn">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="carousel"></div>
+        </div>
+    </main>
+
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>

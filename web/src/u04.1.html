@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.17/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+        <div class='shadow-lg rounded-lg my-20 mx-40'>
+          <div class="text-xl bg-gray-600 text-white py-4 px-3 rounded-t">
+            HISTORIA CLINICA:
+          </div>
+          <div class='px-5 py-5 gap-4 bg-white rounded-t-lg rounded-b-lg grid grid-cols-2'>
+            <div>
+            <label class="block mb-2 text-lg font-medium text-gray-900 dark:text-white">Datos del paciente</label>
+              <div class="grid grid-cols-1">
+                <div>
+                  <label class="block mb-2 text-sd font-medium text-gray-900 dark:text-white">Dni</label>
+                  <input class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" value="77793912" type="text"><br>
+                </div>
+                <div>
+                  <label class="block mb-2 text-sd font-medium text-gray-900 dark:text-white">Tratamiento</label>
+                  <input class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" value="Transplante capilar" type="text">
+                </div>
+              </div>
+            </div>
+            <div><br>
+            <div class="grid grid-cols-1 mt-3">
+              <div>
+                <label class="block mb-2 text-sd font-medium text-gray-900 dark:text-white">Apellidos</label>
+                <input class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" value=" Garcia Perez" type="text"><br>
+              </div>
+              <div>
+                <label class="block mb-2 text-sd font-medium text-gray-900 dark:text-white">Nombres</label>
+                <input class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" value="Stephano Joel" type="text">
+              </div>
+            </div>
+            </div>
+          </div>
+
+          <div class='px-5 py-5 gap-4 bg-white rounded-t-lg rounded-b-lg'>
+            <div>
+            <label class="block mb-2 text-lg font-medium text-gray-900 dark:text-white">Historial de citas</label>
+              
+<div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="px-6 py-3">
+                    Numero de cita
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Fecha
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Doctor
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    <span class="sr-only">Edit</span>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    1
+                </th>
+                <td class="px-6 py-4">
+                    <input type="date">
+                </td>
+                <td class="px-6 py-4">
+                    Miguel Guillermo Garcia
+                </td>
+                
+                <td class="px-6 py-4 text-right">
+                    <a href="U04.3.html" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Detalles</a>
+                </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    2
+                </th>
+                <td class="px-6 py-4">
+                    <input type="date">
+                </td>
+                
+                <td class="px-6 py-4">
+                    Luisa Torres Aguirre
+                </td>
+                <td class="px-6 py-4 text-right">
+                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Detalles</a>
+                </td>
+            </tr>
+            <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    3
+                </th>
+                
+                <td class="px-6 py-4">
+                    <input type="date">
+                </td>
+                <td class="px-6 py-4">
+                   Pedro Miguel Muñoz Sanchez
+                </td>
+                <td class="px-6 py-4 text-right">
+                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Detalles</a>
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+    <div class="grid grid-cols-2 mx-4">
+        <div class="mt-5 grid ">
+            <button type="button" onclick="window.location.href='u04.html'" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 ">CANCELAR</button>
+        </div>
+        <div class="mt-5 grid">
+            <button type="button" onclick="window.location.href='u04.2.html'" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 ">AGREGAR NUEVA CITA</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

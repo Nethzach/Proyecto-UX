@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.17/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div>
+        <div class='shadow-lg rounded-lg my-20 mx-40'>
+          <div class="text-xl bg-gray-600 text-white py-4 px-3 rounded-t">
+            AGREGAR NUEVA CITA
+          </div>
+          <div class='px-5 pt-5 gap-4 bg-white rounded-t-lg rounded-b-lg grid grid-cols-1'>
+            <div>
+            <label class="block mb-2 text-lg font-medium text-gray-900 dark:text-white">Pacientes dados de baja</label>
+              <div class="grid grid-cols-1 gap-2">
+                <div>
+                  <label class="block mb-2 text-sd font-medium text-gray-900 dark:text-white">Fecha:</label>
+                  <input class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" type="date"><br>
+                </div>
+                <div>
+                  <label class="block mb-2 text-sd font-medium text-gray-900 dark:text-white">Observaciones de cita:</label>
+                  <input class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" type="text">
+                </div>
+                <div>
+                    <label class="block mb-2 text-sd font-medium text-gray-900 dark:text-white">Receta:</label>
+                    <input class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" type="text"><br>
+                  </div>
+              </div>
+              
+            </div>
+            <div>
+
+            </div>
+            <div class="grid grid-cols-2 mx-4">
+        <div class="mt-5 grid ">
+            <button onclick="mostrarAlerta()" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800  ">GUARDAR CAMBIOS</button>
+        </div>
+        <div class="mt-5 grid">
+            <button onclick="window.location.href='u04.1.html'" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 ">CANCELAR CITA</button>
+        </div>
+    </div>
+    <script>
+        function mostrarAlerta() {
+          alert("CAMBIOS GUARDADOS");
+          window.location.href='u04.1.html'
+        }
+      </script>
+        
+</body>
+</html>

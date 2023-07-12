@@ -1,0 +1,31 @@
+/*Comentarios para los estilos */
+
+body {
+    background-color: white;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+
+.texto2 {
+    font: Verdana;
+    Size: 80px;
+    color: black;
+}
+
+#textoconid {
+    color: #C3A67A;
+    background-color: yellow;
+}
+
+a {
+    color: aqua;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1.h1textoamarillo {
+    color: yellow;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.17/dist/tailwind.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class='shadow-lg rounded-lg my-20 mx-40'>
+        <div class="text-xl bg-gray-600 text-white py-4  px-3 rounded-t">Consultar historia clinica</div>
+        <div class='px-5 py-5 bg-white rounded-t-lg rounded-b-lg '>
+            <label class="block mb-2 text-lg font-medium text-gray-900 dark:text-white ">Buscar por paciente
+                por:</label>
+            <div class="flex items-center mb-4">
+                <input id="default-radio-1" type="radio" value="" name="default-radio"
+                    class="ml-5 w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-radio-1" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Documento
+                    de identidad</label>
+            </div>
+            <div class="flex items-center">
+                <input checked id="default-radio-2" type="radio" value="" name="default-radio"
+                    class="ml-5 w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-radio-2" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Nombres y
+                    Apellidos</label>
+            </div>
+            <div class="grid grid-cols-1 mt-3">
+                <div>
+                    <label class="block mb-2 text-sd font-medium text-gray-900 dark:text-white">Nombres y
+                        Apellidos--</label>
+                    <input
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Escribir nombre" type="text"><br>
+                </div>
+                <div>
+                    <label class="block mb-2 text-sd font-medium text-gray-900 dark:text-white">Documento de
+                        identidad--</label>
+                    <input
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Escribir dni" type="text">
+                </div>
+            </div>
+            <div class="relative overflow-x-auto shadow-md sm:rounded-lg my-10 bt">
+                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                    <caption
+                        class="p-5 text-lg font-semibold text-left text-gray-900 bg-white dark:text-white dark:bg-gray-800">
+                        RESULTADOS:
+                    </caption>
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">
+                                NOMBRES Y APELLIDOS
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                DNI
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                CODIGO
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                TELEFONO
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Stephano Joel Garcia Perez
+                            </th>
+                            <td class="px-6 py-4">
+                                77793912
+                            </td>
+                            <td class="px-6 py-4">
+                                123123
+                            </td>
+                            <td class="px-6 py-4">
+                                916 321 123
+                            </td>
+                            <td class="px-6 py-4 text-right">
+                                <a href="u04.1.html"
+                                    class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Ver
+                                    historia</a>
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Lionel Juan Quispe Herrera
+                            </th>
+                            <td class="px-6 py-4">
+                                1231256
+                            </td>
+                            <td class="px-6 py-4">
+                                12313
+                            </td>
+                            <td class="px-6 py-4">
+                                987 123 222
+                            </td>
+                            <td class="px-6 py-4 text-right">
+                                <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Ver
+                                    historia</a>
+                            </td></a>
+                            </td>
+                        </tr>
+                        <tr class="bg-white dark:bg-gray-800">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Miguel Luis Pardo Soto
+                            </th>
+                            <td class="px-6 py-4">
+                                77765445
+                            </td>
+                            <td class="px-6 py-4">
+                                123512
+                            </td>
+                            <td class="px-6 py-4">
+                                988 778 121
+                            </td>
+                            <td class="px-6 py-4 text-right">
+                                <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Ver
+                                    historia</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="mt-5 grid grid-cols-6 mx-5 ">
+                <button type="button" onclick="window.location.href='Agendar nueva cita.html'"
+                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 ">Cancelar</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
