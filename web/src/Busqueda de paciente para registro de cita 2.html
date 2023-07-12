@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="cuadro-central">
+        <h2>Agendar nueva cita</h2>
+        <h3>Busqueda de paciente por:</h3>
+        <div class="cuadro-interior">
+            <div>
+                <a href="#"">
+                    <img src=" ./img/folder.png" alt="imagen" width="15" height="15">
+                    <span>Documento de identidad</span>
+                </a>
+                <button class="button" style="float: right;"
+                    onclick="window.location.href='Alta nuevo paciente.html'">Alta nuevo paciente</button><br>
+                <a href="#"">
+                    <img src=" ./img/folder.png" alt="imagen" width="15" height="15">
+                    <span>Nombres y apellidos</span>
+                </a>
+            </div>
+        </div>
+        <div class="busqueda">
+            <form>
+                <label>APELLIDO PATERNO: </label>
+                <input type="text" id="apePaterno"><br>
+                <label>APELLIDO MATERNO: </label>
+                <input type="text" id="apeMaterno"><br>
+                <label>NOMBRES: </label>
+                <input type="text" id="nombres"><br>
+                <button class="button">Buscar paciente</button>
+            </form>
+        </div>
+        <div class="resultado">
+            <div class="contenido">
+                <div class="fila">
+                    <div class="casilla">
+                        <label>DNI</label><br>
+                    </div>
+                    <div class="casilla">
+                        <label>NOMBRE</label><br>
+                    </div>
+                    <div class="casilla">
+                        <label></label><br>
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="casilla">
+                        <label>XXXXXX</label><br>
+                    </div>
+                    <div class="casilla">
+                        <label>XXXXXX</label><br>
+                    </div>
+                    <div class="casilla">
+                        <div class="flex items-center mb-4">
+                            <input id="default-checkbox" type="checkbox" value=""
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        </div>
+                    </div><br><br>
+                    <button class="button"
+                        onclick="window.location.href='Registro de fecha y hora de cita.html'">Confirmar
+                        paciente</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
