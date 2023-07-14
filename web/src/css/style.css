@@ -82,6 +82,10 @@ form.sign-up-form{
     pointer-events: none;
 }
 
+form.sign-in.form{
+    display: none;
+}
+
 .logo{
     display: flex;
     align-items: center;
@@ -193,7 +197,7 @@ label{
     transition: 0.3s;
 }
 
-.text a :hover{
+.text a:hover{
     color: #8371fd;
 
 }
